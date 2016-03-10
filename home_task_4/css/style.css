@@ -1,16 +1,18 @@
 body {
-	background-color: #F2EFEA;
-	color: #403D58;
-	font: 16px/24px 'Verdana', sans-serif;
+	background-color: #F9F9F9;
+	color: #0E3B43;
+	font-size: 16px;
+	line-height: 1.4em;
+	font-family: tahoma;
 }
 
 a {
-	color: #45CCC5;
+	color: #55BAA6;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	text-align: center;
-	margin: 10px 30px;
+	margin: 10px 0px;
 }
 
 h1 {
@@ -18,44 +20,67 @@ h1 {
 }
 
 p {
-	padding: 0px 30px;
+	padding: 0px;
 	display: inline-block;
-	/*width: 100%;*/
 }
 
 img {
-	margin: 0px 20px 20px 0;
+	display: block;
 }
 
 table,
 ul,
 ol {
-	margin: 10px 30px;
+	margin: 10px 0px;
+	padding-left: 20px;
 }
 
+.container {
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
 
+.text-center {
+	text-align: center;
+}
+
+.wrap-link {
+	margin: 20px 0px;
+}
+
+.image-wrap {
+	float: left;
+	margin: 0px 20px 20px 0;
+	padding: 10px;
+	width: 350px;
+	background: #FFF;
+	border: 1px solid #D8B265;
+}
 
 .bordered-title {
-	border-bottom: 2px solid #FC7753;
+	border-bottom: 1px solid #D8B265;
 	padding: 20px 0px;
 	margin-bottom: 20px;
-	color: #FC7753;
+	color: #877855;
 }
 
 #table-menu {
-	width: 100%;
 	margin: 50px 0px;
 	text-align: center;
 }
 
-#table-menu a {
+#table-menu table {
+	width: 100%;
+}
+
+#table-menu table a {
 	font-weight: bold;
 }
 
 .logo {
-	float: left;
-	width: 350px;
-	border: 10px solid #fff;
+	width: 100%;
 }
 
 .experience-table {
