@@ -1,0 +1,75 @@
+body {
+	background-color: #F2EFEA;
+	color: #403D58;
+	font: 16px/24px 'Verdana', sans-serif;
+}
+
+a {
+	color: #45CCC5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+	margin: 10px 30px;
+}
+
+h1 {
+	margin-top: 75px;
+}
+
+p {
+	padding: 0px 30px;
+	display: inline-block;
+	/*width: 100%;*/
+}
+
+img {
+	margin: 0px 20px 20px 0;
+}
+
+table,
+ul,
+ol {
+	margin: 10px 30px;
+}
+
+
+
+.bordered-title {
+	border-bottom: 2px solid #FC7753;
+	padding: 20px 0px;
+	margin-bottom: 20px;
+	color: #FC7753;
+}
+
+#table-menu {
+	width: 100%;
+	margin: 50px 0px;
+	text-align: center;
+}
+
+#table-menu a {
+	font-weight: bold;
+}
+
+.logo {
+	float: left;
+	width: 350px;
+	border: 10px solid #fff;
+}
+
+.experience-table {
+	width: 500px;
+	border: 1px solid #403D58;
+	border-collapse: collapse;
+		
+}
+
+.experience-table td {
+	border: 1px solid #403D58;	
+	padding: 5px 15px;
+}
+
+.experience-table .title-cell {
+	text-align: center;
+}
