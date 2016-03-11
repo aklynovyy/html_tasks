@@ -1,13 +1,14 @@
 body {
-	background-color: #F9F9F9;
-	color: #0E3B43;
+	background-image: url('../img/bg_page.jpg');
+	color: #2e112d;
 	font-size: 16px;
 	line-height: 1.4em;
 	font-family: tahoma;
 }
 
 a {
-	color: #55BAA6;
+	color: #fd583c;
+	font-weight: bold;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,12 +17,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	margin-top: 75px;
+	/*margin-top: 75px;*/
 }
 
 p {
 	padding: 0px;
-	display: inline-block;
+	/*display: inline-block;*/
 }
 
 img {
@@ -37,9 +38,9 @@ ol {
 
 .container {
 	max-width: 1200px;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin: 0 auto;
+	padding: 20px 30px;
+	margin: 50px auto;
+	background: rgba(255,255,255, 0.75);
 }
 
 .text-center {
@@ -55,15 +56,20 @@ ol {
 	margin: 0px 20px 20px 0;
 	padding: 10px;
 	width: 350px;
-	background: #FFF;
-	border: 1px solid #D8B265;
+	background: #ffdbc5;
+	border: 1px solid #c5233b;
 }
 
 .bordered-title {
-	border-bottom: 1px solid #D8B265;
+	border-bottom: 1px solid #c5233b;
 	padding: 20px 0px;
 	margin-bottom: 20px;
-	color: #877855;
+	color: #7c0032;
+}
+
+.summery-block {
+	display: inline-block;
+	width: 100%;
 }
 
 #table-menu {
