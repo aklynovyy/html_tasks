@@ -1,0 +1,183 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFF;
+	font-size: 14px;
+	line-height: 1.714em; /* 24px/14px=1.714285714285714em */
+	font-family: 'Roboto', sans-serif;
+	color: #FFF;
+}
+
+body * {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, p {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #4bcaff;
+}
+
+header {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	right: 0;
+	left: 0;
+	min-height: 150px;
+	background: rgba(53,63,70, 0.85);
+}
+
+nav {
+	float: right;
+	margin-top: 54px;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+nav ul li a {
+	display: block;
+	padding: 4px 17px;
+	border: 2px solid transparent;
+	font-weight: 700;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+	color: #4bcaff;
+	border-color: #4bcaff;
+}
+
+header .logo {
+	margin-top: 61px;
+	float: left;
+}
+
+section {
+	padding: 75px 0;
+}
+
+.container {
+	margin: 0px auto;
+	max-width: 1200px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.title {
+	position: relative;
+	margin-bottom: 46px;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.title:after {
+	content: "";
+	position: absolute;
+	width: 45px;
+	height: 2px;
+	background: #FFF;
+	bottom: -7px;
+	left: 0px;
+}
+
+.row {
+	display: inline-block;
+	width: 100%;
+	margin: 0px -15px;
+}
+
+.four-column {
+	float: left;
+	width: 25%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.promo {
+	padding-top: 150px;
+	height: 800px;
+	background: url('../img/bg_promo.jpg') 0 0 no-repeat;
+}
+
+.promo .container {
+	display: table;
+	width: 100%;
+	height: 100%;
+	min-height: none;
+}
+
+.promo .container .inner-wrap {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.promo h1,
+.promo h2 {
+	display: inline-block;
+	margin-bottom: 12px;
+	padding: 0px 15px;
+	font-size: 42px;
+	line-height: 65px;
+	font-weight: 300;
+	background: rgba(53,63,70, 0.85);
+}
+
+.services {
+	background: #4BCAFF;
+	color: #fff;
+}
+
+.services .thumbnail h3  {
+	margin: 15px 0px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.portfolio {
+	color: #515f67;
+}
+
+.portfolio .title {
+	float: left;
+}
+
+.portfolio .title:after {
+	background: #515f67;
+}
+
+.portfolio nav {
+	margin: 0px;
+}
+
+.portfolio nav ul li a {
+	color: #515f67;	
+}
+
+.portfolio nav ul li a:hover,
+.portfolio nav ul li a:focus {
+	color: #4bcaff;	
+}
+
+
+
+
