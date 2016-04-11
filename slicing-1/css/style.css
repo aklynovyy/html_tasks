@@ -1,0 +1,97 @@
+body {
+	background: url('../img/bg_body.jpg') 0 0 repeat;
+}
+
+body * {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: all 0.15s ease;
+	   -moz-transition: all 0.15s ease;
+	    -ms-transition: all 0.15s ease;
+	     -o-transition: all 0.15s ease;
+	        transition: all 0.15s ease;
+}
+
+main {
+	width: 1000px;
+	margin: 12px auto 0 auto;
+	padding-left: 12px;
+}
+
+section {
+	position: relative;
+	float: left;
+	padding: 20px 23px 20px 21px;
+	width: 768px;
+	border: 1px solid #34251c;
+	background: url('../img/bg_container.jpg') 0 0 repeat;
+	-webkit-box-shadow: inset 0px 0px 1px 1px rgba(202, 160, 98, 1);
+ 		 -moz-box-shadow: inset 0px 0px 1px 1px rgba(202, 160, 98, 1);
+		 	 	 	box-shadow: inset 0px 0px 1px 1px rgba(202, 160, 98, 1);
+}
+
+section:before,
+section:after,
+.container:before,
+.container:after {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	background-image: url('../img/bg_corners_sprite.png');
+}
+
+section:before {
+	top: 0;
+	left: 0;
+	width: 99px;
+	height: 100px;
+	background-position: top left;
+}
+
+section:after {
+	top: 0;
+	right: 0;
+	width: 100px;
+	height: 99px;
+	background-position: top right;
+}
+
+.container:before {
+	bottom: 0;
+	left: 0;
+	width: 100px;
+	height: 99px;
+	background-position: bottom left;
+}
+
+.container:after {
+	right: 0;
+	bottom: 0;
+	width: 99px;
+	height: 100px;
+	background-position: bottom right;
+}
+
+.content {
+	position: relative;
+	padding: 0 38px 0 64px;
+	background: url('../img/bg_body_content.jpg') 0 0 repeat;
+	height: 500px;
+	border: 1px solid #e4e2e6;
+}
+
+.content:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 17px;
+	width: 26px;
+	height: 100%;
+	background: url('../img/bg_left_content.png') 0 0 repeat-y;
+}
+
