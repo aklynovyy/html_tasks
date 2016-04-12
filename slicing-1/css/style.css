@@ -1,5 +1,28 @@
+@font-face {
+    font-family: 'MyriadProBoldCond';
+    src: url('fonts/MyriadProBoldCond.eot');
+    src: url('fonts/MyriadProBoldCond.eot') format('embedded-opentype'),
+         url('fonts/MyriadProBoldCond.woff2') format('woff2'),
+         url('fonts/MyriadProBoldCond.woff') format('woff'),
+         url('fonts/MyriadProBoldCond.ttf') format('truetype'),
+         url('fonts/MyriadProBoldCond.svg#MyriadProBoldCond') format('svg');
+}
+
+@font-face {
+    font-family: 'LucidaSans';
+    src: url('fonts/LucidaSansRegular.eot');
+    src: url('fonts/LucidaSansRegular.eot') format('embedded-opentype'),
+         url('fonts/LucidaSansRegular.woff2') format('woff2'),
+         url('fonts/LucidaSansRegular.woff') format('woff'),
+         url('fonts/LucidaSansRegular.ttf') format('truetype'),
+         url('fonts/LucidaSansRegular.svg#LucidaSans') format('svg');
+}
+
 body {
 	background: url('../img/bg_body.jpg') 0 0 repeat;
+	font-size: 13px;
+	line-height: 17px;
+	font-family: 'LucidaSans', sans-serif;
 }
 
 body * {
@@ -10,11 +33,16 @@ body * {
 
 a {
 	text-decoration: none;
-	-webkit-transition: all 0.15s ease;
-	   -moz-transition: all 0.15s ease;
-	    -ms-transition: all 0.15s ease;
-	     -o-transition: all 0.15s ease;
-	        transition: all 0.15s ease;
+	-webkit-transition: all 0.2s ease;
+	   -moz-transition: all 0.2s ease;
+	    -ms-transition: all 0.2s ease;
+	     -o-transition: all 0.2s ease;
+	        transition: all 0.2s ease;
+}
+
+img {
+	display: block;
+	width: 100%;
 }
 
 main {
@@ -30,9 +58,9 @@ section {
 	width: 768px;
 	border: 1px solid #34251c;
 	background: url('../img/bg_container.jpg') 0 0 repeat;
-	-webkit-box-shadow: inset 0px 0px 1px 1px rgba(202, 160, 98, 1);
- 		 -moz-box-shadow: inset 0px 0px 1px 1px rgba(202, 160, 98, 1);
-		 	 	 	box-shadow: inset 0px 0px 1px 1px rgba(202, 160, 98, 1);
+	-webkit-box-shadow: inset 0px 0px 1px 1px rgba(202, 160, 98, 1), 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
+ 		 -moz-box-shadow: inset 0px 0px 1px 1px rgba(202, 160, 98, 1), 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
+		 	 	 	box-shadow: inset 0px 0px 1px 1px rgba(202, 160, 98, 1), 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
 }
 
 section:before,
@@ -61,6 +89,20 @@ section:after {
 	background-position: top right;
 }
 
+.clearfix:before, 
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
 .container:before {
 	bottom: 0;
 	left: 0;
@@ -81,8 +123,10 @@ section:after {
 	position: relative;
 	padding: 0 38px 0 64px;
 	background: url('../img/bg_body_content.jpg') 0 0 repeat;
-	height: 500px;
 	border: 1px solid #e4e2e6;
+	-webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
+ 		 -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
+		 	 	 	box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
 }
 
 .content:before {
@@ -95,3 +139,314 @@ section:after {
 	background: url('../img/bg_left_content.png') 0 0 repeat-y;
 }
 
+/*****************************************
+	HEADER
+*****************************************/
+header {
+	padding: 25px 0 0;
+	margin-bottom: 55px;
+	display: inline-block;
+	width: 100%;
+}
+
+header h1 {
+	position: relative;
+	display: inline-block;
+	font-size: 48px;
+	line-height: 37px;
+	font-family: 'MyriadProBoldCond', sans-serif;
+	text-transform: uppercase;
+}
+
+header h1:before,
+header h1:after {
+	position: absolute;
+	content: "";
+	height: 1px;
+}
+
+header h1:before {
+	top: 0;
+	right: -8px;
+	left: -5px;
+	border-top: 1px solid #a4a2a6;
+}
+
+header h1:after {
+	right: -8px;
+	bottom: 3px;
+	left: -14px;
+	border-bottom: 1px solid #a4a2a6;
+}
+
+header h1 span:before,
+header h1 span:after {
+	position: absolute;
+	content: "";
+	width: 1px;
+}
+
+header h1 span:before {
+	top: -2px;
+	bottom: -9px;
+	left: 1px;
+	border-left: 1px solid #a4a2a6;
+}
+
+header h1 span:after {
+	top: -4px;
+	right: 0px;
+	bottom: -9px;
+	border-left: 1px solid #a4a2a6;
+}
+
+header nav {
+	float: right;
+}
+
+header nav ul {
+	display: inline-block;
+	width: 100%;
+	padding-right: 13px;
+}
+
+header nav ul li {
+	float: left;
+	margin-left: 29px;
+}
+
+header nav ul li:first-child {
+	margin-left: 0;
+}
+
+header nav ul li a {
+	position: relative;
+	display: block;
+	padding: 5px 5px 10px 5px;
+	font-size: 15px;
+	line-height: 1em;
+	font-family: 'Trebuchet MS', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #A7262C;
+}
+
+header nav ul li a:hover,
+header nav ul li a:focus {
+	color: #000;
+}
+
+header nav ul li a:before {
+	position: absolute;
+	z-index: 2;
+	content: "";
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 7px;
+	background: url('../img/bg_hover_line.png') 0 0 no-repeat;
+	-webkit-background-size: 100% auto;
+	     -o-background-size: 100% auto;
+	        background-size: 100% auto;
+	-webkit-transition: all 0.2s ease;
+	   -moz-transition: all 0.2s ease;
+	    -ms-transition: all 0.2s ease;
+	     -o-transition: all 0.2s ease;
+	        transition: all 0.2s ease;
+	opacity: 0;
+}
+
+header nav ul li a:hover:before,
+header nav ul li a:focus:before {
+	opacity: 1;
+}
+
+/*****************************************
+	CONTENT
+*****************************************/
+section h3 {
+	font-size: 20px;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-weight: 700;
+}
+
+.socil-links {
+	display: table;
+	padding: 12px 0 57px 0;
+	width: 100%;
+	background: url('../img/bg_devider_1.png') 0 100% no-repeat;
+	-webkit-background-size: 100% auto;
+	     -o-background-size: 100% auto;
+	        background-size: 100% auto;
+}
+
+.socil-links li {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.socil-links li a {
+	display: block;
+	color: #000;
+	font-size: 14px;
+	line-height: 35px;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.socil-links li a span {
+	display: inline-block;
+	margin-left: 6px;
+	width: 35px;
+	height: 35px;
+	background-image: url(../img/bg_social_sprite.png);
+	-webkit-transition: all 0.4s ease;
+	   -moz-transition: all 0.4s ease;
+	    -ms-transition: all 0.4s ease;
+	     -o-transition: all 0.4s ease;
+	        transition: all 0.4s ease;
+}
+
+.socil-links li a.twitter-link span {
+	background-position: 0 0;
+}
+
+.socil-links li a.facebook-link span {
+	background-position: 72px 0;
+}
+
+.socil-links li a.picasa-link span {
+	background-position: -75px 0;
+}
+
+.socil-links li a:hover span,
+.socil-links li a:focus span {
+	-webkit-transform: rotateY(180deg);
+	   -moz-transform: rotateY(180deg);
+	    -ms-transform: rotateY(180deg);
+	     -o-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+}
+
+/*****************************************
+	SLIDER
+*****************************************/
+.slider {
+	position: relative;
+	padding: 35px 0 55px 0;
+	margin-bottom: 50px;
+	background: url('../img/bg_devider_2.png') 0 100% no-repeat;
+	-webkit-background-size: 100% auto;
+	     -o-background-size: 100% auto;
+	        background-size: 100% auto;
+}
+
+.slider h3 {
+	margin-bottom: 17px;
+}
+
+.slides {
+	margin: 0 -6px;
+}
+
+.slides li {
+	float: left;
+	width: 33.333%;
+	padding: 0 6px;
+	margin-bottom: 17px;
+}
+
+.slides li a {
+	display: block;
+	padding: 1px;
+	background: #fff;
+	border: 3px solid #d2d2d4;
+}
+
+.slide-nav {
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	width: 26px;
+	height: 45px;
+	background-image: url('../img/bg_slider_nav_sprite.png');
+}
+
+.slide-nav.prev {
+	left: -37px;
+	background-position: top left;
+}
+
+.slide-nav.next {
+	right: -29px;
+	background-position: top right;
+}
+
+.info {}
+
+.info .description,
+.info .contact {
+	float: left;
+	width: 50%;
+}
+
+.info .description {
+	padding-right: 14px;
+}
+
+.info h3 {
+	margin-bottom: 19px;
+}
+
+.info .contact {
+	padding-left: 14px;
+}
+
+.contact label {
+	display: block;
+	margin-bottom: 6px;
+	font-weight: 700;
+	font-size: 13px;
+}
+
+.contact input,
+.contact textarea {
+	width: 100%;
+	padding-left: 6px;
+	margin-bottom: 13px;
+	background: transparent;
+	border: 0 none;
+	outline: 0 none;
+}
+
+.contact input[type="text"],
+.contact input[type="email"] {
+	height: 30px;
+	background: url('../img/bg_input.png') 0 50% no-repeat;
+	-webkit-background-size: 100% auto;
+	     -o-background-size: 100% auto;
+	        background-size: 100% auto;
+}
+
+.contact textarea {
+	background: url('../img/bg_textarea.png') 0 50% no-repeat;
+	height: 136px;
+	resize: none;
+	-webkit-background-size: 100% 100%;
+	     -o-background-size: 100% 100%;
+	        background-size: 100% 100%;	
+}
+
+.contact input[type="submit"] {
+	display: block;
+	margin: 0 auto;
+	width: 159px;
+	height: 35px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 35px;
+	background: url('../img/bg_button.png') 0 0 no-repeat;
+	-webkit-background-size: 100% 100%;
+	     -o-background-size: 100% 100%;
+	        background-size: 100% 100%;
+	cursor: pointer;
+}
