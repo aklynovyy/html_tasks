@@ -47,8 +47,21 @@ img {
 
 main {
 	width: 1000px;
-	margin: 12px auto 0 auto;
+	margin: 12px auto;
 	padding-left: 12px;
+}
+
+aside {
+	float: left;
+	width: 220px;
+}
+
+aside img {
+	position: relative;
+	z-index: 3;
+	left: -22px;
+	width: 272px;
+	top: -12px;
 }
 
 section {
@@ -119,21 +132,25 @@ section:after {
 	background-position: bottom right;
 }
 
-.content {
-	position: relative;
-	padding: 0 38px 0 64px;
+.container {
+	padding: 24px 38px 57px 60px;
 	background: url('../img/bg_body_content.jpg') 0 0 repeat;
 	border: 1px solid #e4e2e6;
 	-webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
  		 -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
 		 	 	 	box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
+	
+}
+
+.content {
+    padding: 0 0 0 3px;
 }
 
 .content:before {
 	content: "";
 	position: absolute;
-	top: 0;
-	left: 17px;
+	top: -14px;
+	left: 40px;
 	width: 26px;
 	height: 100%;
 	background: url('../img/bg_left_content.png') 0 0 repeat-y;
@@ -143,8 +160,8 @@ section:after {
 	HEADER
 *****************************************/
 header {
-	padding: 25px 0 0;
-	margin-bottom: 55px;
+	padding: 0;
+	margin-bottom: 68px;
 	display: inline-block;
 	width: 100%;
 }
@@ -207,12 +224,12 @@ header nav {
 header nav ul {
 	display: inline-block;
 	width: 100%;
-	padding-right: 13px;
+	padding-right: 11px;
 }
 
 header nav ul li {
 	float: left;
-	margin-left: 29px;
+	margin-left: 28px;
 }
 
 header nav ul li:first-child {
@@ -222,7 +239,7 @@ header nav ul li:first-child {
 header nav ul li a {
 	position: relative;
 	display: block;
-	padding: 5px 5px 10px 5px;
+	padding: 4px 5px 10px 5px;
 	font-size: 15px;
 	line-height: 1em;
 	font-family: 'Trebuchet MS', sans-serif;
@@ -253,7 +270,7 @@ header nav ul li a:before {
 	    -ms-transition: all 0.2s ease;
 	     -o-transition: all 0.2s ease;
 	        transition: all 0.2s ease;
-	opacity: 0;
+	opacity: 0;;
 }
 
 header nav ul li a:hover:before,
@@ -268,11 +285,12 @@ section h3 {
 	font-size: 20px;
 	font-family: 'Trebuchet MS', sans-serif;
 	font-weight: 700;
+	margin-bottom: 4px;
 }
 
 .socil-links {
 	display: table;
-	padding: 12px 0 57px 0;
+	padding: 9px 0 56px 0;
 	width: 100%;
 	background: url('../img/bg_devider_1.png') 0 100% no-repeat;
 	-webkit-background-size: 100% auto;
@@ -293,9 +311,13 @@ section h3 {
 	font-family: 'Trebuchet MS', sans-serif;
 }
 
+.socil-links li a b {
+	font-weight: 700;
+}
+
 .socil-links li a span {
 	display: inline-block;
-	margin-left: 6px;
+	margin-left: 4px;
 	width: 35px;
 	height: 35px;
 	background-image: url(../img/bg_social_sprite.png);
@@ -332,7 +354,7 @@ section h3 {
 *****************************************/
 .slider {
 	position: relative;
-	padding: 35px 0 55px 0;
+	padding: 38px 0 36px 0;
 	margin-bottom: 50px;
 	background: url('../img/bg_devider_2.png') 0 100% no-repeat;
 	-webkit-background-size: 100% auto;
@@ -341,7 +363,7 @@ section h3 {
 }
 
 .slider h3 {
-	margin-bottom: 17px;
+	margin-bottom: 18px;
 }
 
 .slides {
@@ -365,19 +387,19 @@ section h3 {
 .slide-nav {
 	position: absolute;
 	z-index: 10;
-	top: 50%;
+	top: 45%;
 	width: 26px;
 	height: 45px;
 	background-image: url('../img/bg_slider_nav_sprite.png');
 }
 
 .slide-nav.prev {
-	left: -37px;
+	left: -41px;
 	background-position: top left;
 }
 
 .slide-nav.next {
-	right: -29px;
+	right: -32px;
 	background-position: top right;
 }
 
@@ -393,12 +415,18 @@ section h3 {
 	padding-right: 14px;
 }
 
+.info .description img {
+	display: inline-block;
+	width: auto;
+	margin: 48px 0 0 35px;
+}
+
 .info h3 {
-	margin-bottom: 19px;
+	margin-bottom: 16px;
 }
 
 .info .contact {
-	padding-left: 14px;
+	padding-left: 18px;
 }
 
 .contact label {
@@ -406,11 +434,13 @@ section h3 {
 	margin-bottom: 6px;
 	font-weight: 700;
 	font-size: 13px;
+	line-height: 21px;
+	padding-left: 4px;
 }
 
 .contact input,
 .contact textarea {
-	width: 100%;
+	width: 96%;
 	padding-left: 6px;
 	margin-bottom: 13px;
 	background: transparent;
@@ -449,4 +479,18 @@ section h3 {
 	     -o-background-size: 100% 100%;
 	        background-size: 100% 100%;
 	cursor: pointer;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+footer p {
+	color: #FFF;
+	font-size: 10px;
+	line-height: 19px;
 }
