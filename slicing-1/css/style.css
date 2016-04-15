@@ -155,6 +155,10 @@ section:after {
 	background: url('../img/bg_left_content.png') 0 0 repeat-y;
 }
 
+.cbalink {
+	display: none !important;
+}
+
 /*****************************************
 	HEADER
 *****************************************/
@@ -731,7 +735,7 @@ footer p {
     position: relative;
     float: none;
     padding: 10px;
-    border: 1px solid #34251c;
+    border: 0 none;
     background: url('../img/bg_container.jpg') 0 0 repeat;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
