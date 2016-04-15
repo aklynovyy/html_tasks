@@ -404,6 +404,7 @@ section h3 {
 .slide-nav.next {
 	right: -32px;
 	background-position: top right;
+	margin-top: 4px;
 }
 
 .info .description,
@@ -469,7 +470,7 @@ section h3 {
 
 .contact input[type="submit"] {
 	display: block;
-	margin: 0pxv auto;
+	margin: 0px auto;
 	width: 159px;
 	height: 35px;
 	font-weight: 700;
