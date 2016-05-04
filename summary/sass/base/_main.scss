@@ -1,0 +1,50 @@
+
+* {
+  @include box-sizing(border-box);
+}
+
+a {
+  outline: none;
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: $body-background;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $body-color;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $a-link-color;
+  text-decoration: none;
+  font-weight: 700; 
+  
+  &:hover,
+  &:focus {
+    color: $a-hover-color;
+    text-decoration: none;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  font: {
+    family: $base-font-family;
+  }
+  color: $body-color;
+  -webkit-appearance: none;
+  @include background-clip(padding-box);
+  @include border-radius(0);
+}

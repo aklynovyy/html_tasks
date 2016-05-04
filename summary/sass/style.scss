@@ -1,0 +1,36 @@
+/* Compass utilities*/
+// Use one CSS3 mixin instead of multiple vendor prefixes.
+// @import "compass/support";
+// @import "compass/css3";
+// See http://compass-style.org/help/tutorials/spriting/
+// @import "compass/utilities/sprites";
+// Helps set up a vertical rhythm.
+// @import "compass/typography/vertical_rhythm";
+@import "compass";
+
+// Sass utilities (sass/helpers/)
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/ie";
+
+// Vendors and external stylesheets (sass/vendors/)
+@import "vendors/bootstrap/bootstrap";
+@import "vendors/onepage-scroll";
+
+// Base stuff (sass/base)
+@import "base/typography";
+@import "base/normalize";
+@import "base/main";
+
+// Components (sass/components/)
+@import "components/icons";
+
+// Blocks stylesheets (sass/blocks/)
+@import "blocks/header";
+@import "blocks/footer";
+
+// Pages stylesheets (sass/pages/)
+@import "pages/page";
+
+// layouts (sass/layouts/)
+@import "layouts/responsive";
