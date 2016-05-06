@@ -1,0 +1,36 @@
+.column {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+
+
+.column-1 {
+  background: red;
+}
+
+.column-2 {
+  background: #ddd;
+}
+
+.column-3 {
+  background: yellow;
+}
+
+.column-4 {
+  background: blue;
+}
+
+.column-5 {
+  background: #ebebeb;
+}
+
+.column-6 {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  margin-top: -136px;
+  background: green;
+  border: 2px solid black;
+}
+
