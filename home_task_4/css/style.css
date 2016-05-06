@@ -16,9 +16,9 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 10px 0px;
 }
 
-h1 {
-	/*margin-top: 75px;*/
-}
+/*h1 {
+	margin-top: 75px;
+}*/
 
 p {
 	padding: 0px;
@@ -53,7 +53,7 @@ ol {
 
 .image-wrap {
 	float: left;
-	margin: 0px 20px 20px 0;
+	margin: 0px 20px 20px 0px;
 	padding: 10px;
 	width: 350px;
 	background: #ffdbc5;
