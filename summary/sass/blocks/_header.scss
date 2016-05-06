@@ -1,5 +1,5 @@
 .header-navbar {
-	position: absolute;
+	position: fixed;
 	z-index: 100;
 	top: 0;
 	left: 0;
@@ -8,35 +8,35 @@
 	color: $theme-color-2;
 	border: 0 none;
 	margin: 0;
-	padding: 20px 0;
+	padding: 10px 0;
 	min-height: 0;
 	@include border-radius(0); 
 	
 	h2 {
 		position: absolute;
-		top: 20px;
+		top: 10px;
 		margin: 0;
-		left: 50%;
-		@include transform(translateX(-50%));
+		left: 15px;
 		
 		a {
 			display: block;
 			color: $theme-color-2;
 			text-align: center;
-			line-height: 1em;
+			line-height: 40px;
 			font-weight: 600;
 			font-style: italic; 
 		}
 
 		.icon {
 			display: inline-block;
+			margin-left: 5px;
 			font-size: 26px;
 			font-weight: 400;
 			font-style: normal; 
 		}
 
 		.title {
-			display: block;
+			display: none;
 			margin: 5px 0 0 0; 
 			font-weight: 300;
 			font-style: normal;
@@ -53,15 +53,37 @@
 				color: $theme-color-2; 
 				padding-top: 0;
 				padding-bottom: 0;
-				line-height: 80px;
+				line-height: 40px;
 				font-weight: 400; 
+				@include transition(all $transition-time $transition-function);
 				
-				&:hover {
+				&:hover,
+				&:focus {
 					background: inherit;
 					color: $a-hover-color;
 				}
 			}
 		}
 	}
+}
+
+.header-navbar-toggle {
+  padding: 12px 10px;
+  margin: 0;
+  
+	.icon-bar {
+		background: $theme-color-2;
+	}
+}
+
+.header-navbar-collapse {
+	margin-top: 36px;
+	border: 0 none;
+	@include box-shadow(none);
+}
+
+.header-navbar-nav {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 

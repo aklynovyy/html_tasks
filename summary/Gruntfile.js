@@ -113,7 +113,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', [
         'concat',
-        'uglify:dev',
+        // 'uglify:dev',
         'compass',
         'webfont',
         'watch',

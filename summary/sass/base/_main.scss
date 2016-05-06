@@ -36,6 +36,13 @@ a {
   }
 }
 
+ul,
+dt,
+dd {
+  padding: 0;
+  margin: 0;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -47,4 +54,29 @@ textarea {
   -webkit-appearance: none;
   @include background-clip(padding-box);
   @include border-radius(0);
+}
+
+.onepage-pagination {
+  
+  li {
+    
+    a {
+      width: 6px;
+      height: 6px;
+      
+      &:before {
+        width: 6px;
+        height: 6px;
+        @include border-radius(0);
+        background: $nav-color;
+      }
+
+      &.active {
+        &:before {
+          border: 1px solid $nav-color;
+          background: $theme-color-3; 
+        }
+      }
+    }
+  }
 }
